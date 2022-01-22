@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Using JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+</head>
+<style>
+    html{
+	margin:0px;
+    background: rgb(27, 27, 27);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+
+}
+#form{
+	width: 40%;
+	height: auto;
+	background: rgb(36, 36, 36);
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top:10%;
+	padding: 10px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+input[type=submit]:hover {
+    background-color: red
+}
+
+</style>
+<body>
+    <div id="form" >
+        <form  name="registration" onSubmit="return validation();">
+            <fieldset>
+                <legend style="align-items:center;">Personal Detail</legend></br>
+                    <label>First Name:</label></br>
+                    <input type="text" placeholder="First Name" name="fname"></input></br>
+                    <label>Last Name:</label></br>
+                    <input type="text" placeholder="Last Names" name="lname"></input></br>
+                    <label>Gender</label></br>
+                    <select name="gname">
+                    <option selected="" value="Default">Select</option>
+                    <option>Male</option>
+                    <OPTION>Female</OPTION></select></br>
+                    <label>Date of Birth:</label></br>
+                    <input type="text" placeholder="Birth Date" name="bday"></input></br>
+                    <label>Contact Number</label></br>
+                    <input type="text" placeholder="Mobile Number" name="number"></input>
+                    <p id="discount">Discounted Price</p>
+                    <p id="ndiscount">Non-Discounted Price</p>
+
+                    <input type="submit" value="Checkout" name="submit" onclick="calcAnnual()"></input>
+            </fieldset>
+            </form>
+
+            <script src="pplan.js"></script> 
+
+</body>
+</html>

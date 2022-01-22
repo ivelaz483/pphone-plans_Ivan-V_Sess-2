@@ -1,0 +1,200 @@
+html {
+  background-color: rgb(27, 27, 27);
+}
+.flex-container {
+  display: flex;
+  margin-top: 5px;
+  padding: 10px;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 2px black;
+  border: black;
+  gap: 10%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    float: center;
+    background-color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0px;
+}
+
+.navbar a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  float: center;
+  justify-content: center;
+}
+
+.navbar a:hover {
+  background-color: rgb(148, 148, 148);
+  color: black;
+}
+
+a {
+  display: flex;
+  float: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  margin-top: -26px;
+}
+
+.column {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 2px black;
+  color: white;
+  border: 3px solid red;
+  border-radius: 5px;
+  background-color: rgb(255, 145, 43);
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  display: flex;
+}
+
+
+#header {
+    font-size: 3em;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 3px 3px black;
+}
+
+#header2 {
+  text-align: center;
+}
+
+#header3 {
+    color: white;
+  }
+
+#foot {
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px black;
+    margin-bottom: -36px;
+}
+
+
+.plan1 {
+  border: 2px solid rgb(68, 68, 68);
+  float: left;
+  text-align: center;
+  color: white;
+  padding: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: rgb(36, 36, 36);
+  box-shadow: 4px 4px 5px red;
+}
+
+.plan2 {
+  border: 2px solid rgb(68, 68, 68);
+  float: left;
+  text-align: center;
+  color: white;
+  padding: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: rgb(36, 36, 36);
+  box-shadow: 4px 4px 5px yellow;
+}
+
+.plan3 {
+  border: 2px solid rgb(68, 68, 68);
+  float: left;
+  text-align: center;
+  color: white;
+  padding: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: rgb(36, 36, 36);
+  box-shadow: 4px 4px 5px blue;
+}
+
+a {
+  color: white;
+}
+.price {
+  border: 2px solid rgb(68, 68, 68);
+  float: left;
+  text-align: center;
+  color: white;
+  padding: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: rgb(36, 36, 36);
+  box-shadow: 4px 4px 5px rgb(118, 206, 60);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+#butt {
+  background-color: red; 
+  color: white;
+  padding: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px black;
+}
+
+#butt2 {
+  background-color: yellow; 
+  color: white;
+  padding: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px black;
+}
+
+#butt3 {
+  background-color: blue; 
+  color: white;
+  padding: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px black;
+}
+@media screen and (max-device-width: 1000px){
+  .column img {
+    height: 240px;
+    width: 360px;
+    margin-top: 8px;
+    vertical-align: middle;
+    display:flex;
+  }}
+
+
+@media screen and (max-device-width: 720px) and (orientation: portrait){
+    .column img  {
+      height: 180px;
+      width: 270px;
+      margin-top: 8px;
+      vertical-align: middle;
+      display:flex;
+    }}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+      .column img  {
+        height: 120px;
+        width: 180px;
+        margin-top: 8px;
+        vertical-align: middle;
+        display:flex;
+      }}
